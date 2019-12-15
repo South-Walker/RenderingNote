@@ -12,3 +12,6 @@
 ## 效果示意图
 将上述效果在source上叠加得到的最终效果如下：<br><br>
 ![](/SeeThrough/Img/SeeThroughEff.png)<br><br>
+
+## 备注
+若只是想对被遮挡物体实现透视效果，使用2个Pass，第一个Pass正常渲染，第二个将深度测试的方式修改为Greater（要保证透视物体的渲染队列值大于遮挡物体）
