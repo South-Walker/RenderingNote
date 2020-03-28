@@ -5,3 +5,4 @@
 * [透视效果](/SeeThrough)
 * [阴影映射](/ShadowMapping)
 * [体积阴影](/ShadowVolumes)
+* [燃烧效果](/Burning)
