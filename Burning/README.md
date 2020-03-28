@@ -26,7 +26,7 @@ col.rgb = lerp(colash + spark, col, blendvalue);
 渲染燃烧区实际上就是要基于blendvalue找到一个火焰遮罩，实际上可以抽象为一个自变量为blendvalue的函数，该函数在自变量属于[0-1]时要满足以下性质：
 * 当blendvalue等于0或1时，函数值为0（在完全焦黑的部分与正常部分不出现火焰）
 * 在[0-1]内存在一个且只有一个极大值（对应火焰最旺盛的点，这个极大值应该是1，但是由于拟合的有点次数有点高，求解极大值计算量会较大，所以补上了一个经验系数10）
-* 在[0-1]内最小值小于0（不希望全为火焰）
+* 在[0-1]内最小值小于0（不希望全为火焰）<br>
 在![一个挺好用的绘图网站](https://www.geogebra.org/graphing)拟合了一个满足上述条件的函数![](/Burning/Img/Function.png)，其函数图如下：<br>
 ![](/Burning/Img/FunctionImg.png)
 
